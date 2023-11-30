@@ -1,0 +1,14 @@
+curl -X POST -H "Content-Type: application/json" -d "{\"key\":\"name\", \"value\":\"imane\"}" "http://localhost:8080/set"
+
+curl -X POST -H "Content-Type: application/json" -d "{\"name\":\"imane\"}" "http://localhost:8080/set"
+
+curl -X POST -H "Content-Type: application/json" -d "{\"name\":\"imane\", \"age\":\"20\"}" "http://localhost:8080/set"
+
+curl -X POST -H "Content-Type: application/json" -d "{\"name\":\"imane\", \"age\":\"20\", \"city\":\"azilal\", \"school\":\"cs\", \"university\":\"um6p\", \"gender\":\"female\"}" "http://localhost:8080/set"
+
+curl -X POST -H "Content-Type: application/json" -d "{\"a\":\"b\", \"c\":\"d\", \"e\":\"f\", \"g\":\"h\", \"i\":\"j\"}" "http://localhost:8080/set" 
+
+curl -X POST -H "Content-Type: application/json" -d "{\"k\":\"l\", \"m\":\"n\", \"o\":\"p\", \"q\":\"r\", \"s\":\"t\"}" "http://localhost:8080/set" 
+
+curl "http://localhost:8080/get?key=name"
+curl -X DELETE "http://localhost:8080/del?key=name"
