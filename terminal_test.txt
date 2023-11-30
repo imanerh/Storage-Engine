@@ -1,3 +1,5 @@
+Example of commands:
+
 curl -X POST -H "Content-Type: application/json" -d "{\"key\":\"name\", \"value\":\"imane\"}" "http://localhost:8080/set"
 
 curl -X POST -H "Content-Type: application/json" -d "{\"name\":\"imane\"}" "http://localhost:8080/set"
